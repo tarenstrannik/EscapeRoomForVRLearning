@@ -58,7 +58,7 @@ public class NumberPadDisplay : MonoBehaviour
         m_linkedNumberpad.m_touchpadButtonPressedEvent.RemoveListener(EnterOneNumber);
         m_linkedNumberpad.m_success.RemoveListener(Success);
         m_linkedNumberpad.m_error.RemoveListener(Error);
-        Instantiate(m_keyCardPrefab, m_keyCardInstantiatingPosition);
+        Instantiate(m_keyCardPrefab, m_keyCardInstantiatingPosition.position, m_keyCardInstantiatingPosition.rotation);
     }
     
     private void Error()
